@@ -5,7 +5,15 @@ license = "MIT OR Apache-2.0"
 version = "0.1.0"
 authors = ["Peter Mares"]
 edition = "2018"
+homepage = "https://crates.io/crates/multiprint"
+repository = "https://github.com/carribus/rust-multiprint"
+keywords = ["string", "multiply"]
+categories = ["utility", "strings"]
+readme = "README.MD"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[badges]
+travis-ci = { repository = "carribus/rust-multiprint" }
