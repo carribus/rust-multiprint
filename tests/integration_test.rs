@@ -14,3 +14,18 @@ fn three_times() {
 fn ten_times() {
     assert_eq!("...................", ".".to_string().times(10, '.'));
 }
+
+#[test]
+fn underline_word() {
+    assert_eq!("Header\n______", "Header".to_string().underline('_'));
+}
+
+#[test]
+fn overline_word() {
+    assert_eq!("______\nHeader", "Header".to_string().overline('_'));
+}
+
+#[test]
+fn outline_word() {
+    assert_eq!("******\nHeader\n******", "Header".to_string().outline('*', '*'));
+}

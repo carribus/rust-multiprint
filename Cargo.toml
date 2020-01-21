@@ -2,7 +2,7 @@
 name = "multiprint"
 description = "A convenient string multiplication utility crate"
 license = "MIT OR Apache-2.0"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["Peter Mares"]
 edition = "2018"
 homepage = "https://crates.io/crates/multiprint"
