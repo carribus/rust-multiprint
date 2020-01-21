@@ -24,14 +24,14 @@
 //!     //   Header 1
 //!     //   --------
 //!     //
-//!     println!("{}", "Header 1".underline('-'));
+//!     println!("{}", "Header 1".to_string().underline('-'));
 //! 
 //!     // this will output:
 //!     //
 //!     //   --------
 //!     //   Header 1
 //!     //
-//!     println!("{}", "Header 1".overline('-'));
+//!     println!("{}", "Header 1".to_string().overline('-'));
 //! 
 //!     // this will output:
 //!     //
@@ -39,7 +39,7 @@
 //!     //   Header 1
 //!     //   ========
 //!     //
-//!     println!("{}", "Header 1".outlne('_', '='));
+//!     println!("{}", "Header 1".to_string().outline('_', '='));
 //!     
 //! }
 //! ```
