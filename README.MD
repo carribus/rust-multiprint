@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/carribus/rust-multiprint.svg?branch=master)](https://travis-ci.org/carribus/rust-multiprint)
-[![cratesio](https://img.shields.io/badge/crates.io-v0.1.2-orange.svg?longCache=true)](https://crates.io/crates/multiprint)
+[![cratesio](https://img.shields.io/badge/crates/v/multiprint.svg)](https://crates.io/crates/multiprint)
 [![docsrs](https://docs.rs/multiprint/badge.svg)](https://docs.rs/multiprint)
 
 # MultiPrint - A convenient string value multiplier trait for Rust
