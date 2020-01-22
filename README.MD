@@ -14,7 +14,7 @@ by default when you implement `std::fmt::Display`.
 An example of using the crate:
 
 ```
-use multiprint::MultiPrint;
+use multiprint::{MultiPrint, Decorate};
 
 fn main() {
     let s = String::from("Echo..");
@@ -47,3 +47,11 @@ fn main() {
 }
 ```
 
+## Example(s)
+
+At the moment, there is only one example since the crate is quite simple. If the complexity grows over time,
+I will add more targetted examples. In the meanwhile, to run the example, just type:
+
+```
+$ cargo run --examples sample_headers
+```
