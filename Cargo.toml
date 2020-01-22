@@ -7,7 +7,7 @@ authors = ["Peter Mares"]
 edition = "2018"
 homepage = "https://crates.io/crates/multiprint"
 repository = "https://github.com/carribus/rust-multiprint"
-keywords = ["string", "multiply"]
+keywords = ["string", "multiply", "decorate"]
 categories = ["value-formatting"]
 readme = "README.MD"
 
