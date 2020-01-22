@@ -28,4 +28,12 @@ fn main() {
     //   ========
     //
     println!("{}\n", "Header 1".to_string().outline('_', '='));
+
+    // this will output:
+    //
+    //   ------------
+    //   | Header 1 |
+    //   ------------
+    //
+    println!("{}", "Header 1".to_string().border('-', '|'));
 }

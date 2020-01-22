@@ -44,8 +44,17 @@ fn main() {
     //   ========
     //
     println!("{}", "Header 1".to_string().outline('_', '='));
+
+    // this will output:
+    //
+    //   ------------
+    //   | Header 1 |
+    //   ------------
+    //
+    println!("{}", "Header 1".to_string().border('-', '|'));
 }
 ```
+
 
 ## Example(s)
 
@@ -53,5 +62,5 @@ At the moment, there is only one example since the crate is quite simple. If the
 I will add more targetted examples. In the meanwhile, to run the example, just type:
 
 ```
-$ cargo run --examples sample_headers
+$ cargo run --example sample_headers
 ```

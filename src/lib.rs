@@ -40,6 +40,14 @@
 //!     //   ========
 //!     //
 //!     println!("{}", "Header 1".to_string().outline('_', '='));
+//! 
+//!     // this will output:
+//!     //
+//!     //   ------------
+//!     //   | Header 1 |
+//!     //   ------------
+//!     //
+//!     println!("{}", "Header 1".to_string().border('-', '|'));
 //!     
 //! }
 //! ```
@@ -73,6 +81,9 @@ pub trait Decorate : ToString {
 
     /// Render the string with both an over- and under-line on the previous and following lines using the specific characters
     fn outline(&self, overline_character: char, underline_character: char) -> String;
+
+    /// Render the string with a complete border around it
+    fn border(&self, line_character: char, side_character: char) -> String;
 }
 
 impl MultiPrint for String {}
@@ -91,6 +102,16 @@ impl Decorate for String {
             std::iter::repeat(overline_character).take(self.len()).collect::<String>(), 
             self.to_string(),
             std::iter::repeat(underline_character).take(self.len()).collect::<String>()
+        )
+    }
+
+    fn border(&self, line_character: char, side_character: char) -> String {
+        format!("{}\n{} {} {}\n{}",
+            std::iter::repeat(line_character).take(self.len()+4).collect::<String>(), 
+            side_character,
+            self.to_string(),
+            side_character,
+            std::iter::repeat(line_character).take(self.len()+4).collect::<String>()
         )
     }
 }
@@ -132,5 +153,12 @@ mod tests {
         let s = String::from("This is a header");
 
         assert_eq!(s.outline('-', '='), "----------------\nThis is a header\n================");
+    }
+
+    #[test]
+    fn border() {
+        let s = String::from("Bordered");
+
+        assert_eq!(s.border('-', '|'), "------------\n| Bordered |\n------------");
     }
 }

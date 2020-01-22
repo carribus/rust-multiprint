@@ -29,3 +29,8 @@ fn overline_word() {
 fn outline_word() {
     assert_eq!("******\nHeader\n******", "Header".to_string().outline('*', '*'));
 }
+
+#[test]
+fn border_word() {
+    assert_eq!("Header".to_string().border('-', '|'), "----------\n| Header |\n----------");
+}
